@@ -161,6 +161,8 @@ ul,li{
 						color:#979797;
 						text-decoration: none;
 						&:hover{
+							color:#f8bb10;
+							transition:color 0.3s linear; 
 							text-decoration: underline;
 						}
 					}
