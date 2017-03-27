@@ -29,7 +29,7 @@
   font-style: normal;
 }
 body{
-	background:#fff;
+	background:#fffefc;
 	display:flex; 
 	height:100vh;
 	margin: 0;
@@ -72,9 +72,10 @@ ul,li{
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index:1;
 }
 .left{
-	background:#fbfbfb; 
+	background:#fffbf5; 
 	flex:1 0 0;
 	height: 100%; 
 	box-sizing:border-box;
@@ -97,7 +98,11 @@ ul,li{
 	position: relative;
 	display: flex;
 	flex-direction: column; 
-	padding:0 70px;
+	padding:0 70px; 
+	.main,.footer{
+		position: relative;
+		z-index:2;
+	}
 	.main{
 		flex:1 0 auto;
 		display: flex;
@@ -204,6 +209,9 @@ ul,li{
 	    flex: 0 0 auto;
 	    height: auto;
 	    padding:20px;
+	    canvas{
+	    	display: none;
+	    }
 	    .main{ 
 	    	.text{
 	    	    width: 100%;
