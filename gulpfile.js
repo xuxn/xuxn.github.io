@@ -26,13 +26,13 @@ gulp.task('fileinclude', function(){
 		basepath: '@file' 
 	})) 
 	//image is relative 
-	.pipe(gulp.dest('dest/')); 
+	.pipe(gulp.dest('')); 
 }); 
  
 // Browser update synchronization 
 gulp.task('browser-sync', function(){ 
 	browserSync.init({ 
-		proxy: 'http://xuxn.github.io/dest/', 
+		proxy: 'http://xuxn.github.io/index.html', 
 		serveStatic: ['.', 'css/'] 
 	}); 
 }); 
