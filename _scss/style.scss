@@ -244,3 +244,141 @@ ul,li{
 	    }
 	}
 }
+
+
+
+
+body,html{
+	width: 100%;
+	height: 100%;
+}
+.container{
+	background:radial-gradient(#31537f 0%,#051823  100%);
+	width:100%;
+	height:100%; 
+}
+#canvas{
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:1;
+}
+.box{
+	position: absolute;
+	left:50%;
+	top:50%;
+	z-index:2;
+	transform:translate(-50%,-50%); 
+	width:1000px;
+	height:1000px;
+}
+.circle{
+	position: absolute;  
+	width:100px;
+	height:100px;
+	z-index:3;
+	border-radius:100%;
+	background:#9b8c4c;
+	writing-mode:vertical-rl;
+	writing-mode: tb-rl;
+	text-align: center;
+	color:#fff;
+}
+.svg-container{ 
+	position: absolute;
+	left:0;
+	top: 0; 
+	width: 100%;
+    height: 100%;
+    overflow: hidden; 
+	svg{
+		transform-origin: 0 0;
+		transform:scale(0.5);
+	}
+}
+ 
+#plane1{ 
+	transform-origin:center; 
+	offset-path: path("M632.519,185.1572 C658.361,220.6552 667.614,229.6882 691.186,272.0732 C719.014,322.1112 736.401,372.9462 740.004,379.2382");  
+} 
+#plane2{ 
+	transform-origin:center; 
+	offset-path: path("M1520.4766,507.5762 C1484.3246,457.1662 1457.8436,400.7512 1441.9966,341.4062");  
+} 
+
+.path{
+	fill:none;
+	stroke:#ffe655;
+	stroke-width:10;
+	offset-distance: 100%;
+	opacity:0;
+	position: relative;
+	z-index:12;
+}
+
+.plane{
+	opacity:0;
+	position:relative;
+	z-index:12;
+}
+
+.mask{
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:11;
+	width: 100%;
+	height: 100%;
+	background:rgba(255,255,255,0.1);
+}
+.destination-shi{
+	background:rgba(255,255,255,0.3);
+	padding:10px;
+	border:1px solid #fff;
+	border-radius:20px;
+	position: absolute;
+	left:120px;
+	top:0;
+	opacity:0;
+	transition:opacity 0.2s linear ;
+}
+.introduce{
+	position: absolute;
+	right:45px;
+	bottom:50px;
+}
+.peopel-info{
+	width:345px; 
+	border:15px solid transparent;
+	-moz-border-image:url(../images/border.svg) 30 30 round; 
+	-webkit-border-image:url(../images/border.svg) 10 10 round;	 
+	-o-border-image:url(../images/border.svg) 30 30 round;		 
+	border-image:url(../images/border.svg) 10 10 round; 
+	padding:10px;
+	color:#fff;
+	margin-top: 30px;
+	position: relative;
+	.title{
+		margin-top: -40px;
+		background:rgba(255,255,255,0);
+		.name,.time{
+			display: inline-block;
+			vertical-align: baseline;
+		}
+		.name{
+			font-size: 24px;
+		}
+		.time{
+			font-size: 14px;
+			margin-left: 20px;
+		}
+	}
+	.detail{
+		margin-top: 10px;
+	}
+	.svg-icons{
+		position: absolute;
+		right:20px;
+		top:-50px;
+	}
+}

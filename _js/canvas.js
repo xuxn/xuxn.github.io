@@ -37,8 +37,7 @@ window.onload=function(){
                 rightW=right.offsetWidth;
                 rightH=right.offsetHeight; 
                 can.width=rightW;
-                can.height=rightH;
-                console.log(can.width,can.height)
+                can.height=rightH; 
             }
             var cxt = can.getContext("2d");
 
